@@ -1,0 +1,237 @@
+\documentclass[12pt, a5paper, twoside]{book}
+
+\usepackage{graphicx} % for images
+\usepackage{setspace} % for line spacing
+\usepackage{titlesec} % for section headings
+\usepackage{fancyhdr} % for header/footer
+\usepackage{hyperref} % for hyperlinks
+\usepackage{lipsum} % for filler text
+% \usepackage[light]{merriweather} % for Merriweather font
+\usepackage{blindtext}
+
+% set margins
+\usepackage[top=2.2cm, bottom=2cm, left=2.1cm, right=1.8cm]{geometry}
+
+% set line spacing
+\onehalfspacing
+
+\setlength{\emergencystretch}{12pt}
+
+% set header/footer
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+\pagestyle{empty}
+
+
+% Function for our Fancy Chapter
+\newcommand{\fancychapter}[2]{
+    \thispagestyle{empty}
+    \vspace*{4cm}
+    \begin{center}
+    
+        \includegraphics[width=0.3\textwidth]{figures/divider.png}
+    
+        \vspace*{5mm}
+        
+        {\huge #1}
+        
+        \vspace*{2mm}
+
+        \textit{#2}
+    
+    \end{center}
+    
+    \newpage
+}
+
+
+% set hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+\frontmatter
+
+\mbox{}
+\newpage
+
+\mbox{}
+\newpage
+
+\mbox{}
+\newpage
+
+\mbox{}
+\newpage
+
+% title page
+\begin{center}
+    \centering
+    \vspace*{5cm}
+    \includegraphics[width=0.8\textwidth]{figures/title.png}    
+    \vspace{2cm}
+    % {\Large by Fanfic Author \par}
+    % \vfill
+    % {\large Published by Fanfic Publisher \par}
+    \vspace{1cm}
+    % {\large \today\par}
+\end{center}
+\newpage
+
+\mbox{}
+\newpage
+
+
+% Author page
+
+\begin{center}
+    \vspace*{5cm}
+    
+    {\Huge\bf INKED}
+    \vspace*{1mm}
+    
+    {\bf \it \large by Drunkonturpentine}
+
+    \vspace*{\fill}
+    \includegraphics[width=1.5cm]{figures/ao3.png}
+\end{center}
+
+\newpage
+
+
+% copyright page
+\begin{center}
+
+\vspace*{3cm}
+
+\includegraphics[width=3cm]{figures/editoring.png}
+
+\vspace*{\fill}
+
+\tiny
+Posted originally on the Archive of Our Own
+
+http://archiveofourown.org/works/18246719
+
+Rating: Mature
+
+Archive Warning: No Archive Warnings Apply
+
+Category: M/M
+
+Fandom: Harry Potter - Marauders
+
+Relationship: Sirius Black/Remus Lupin
+
+Characters: Remus Lupin, Sirius Black, Alice Longbottom, Andromeda Black Tonks, Frank Longbottom, Peter Pettigrew, Mary Macdonald, Regulus Black, James Potter, Lily Evans Potter, Marlene McKinnon, Dorcas Meadowes, Lyall Lupin
+
+Additional Tags: Alternate Universe - Flower Shop \& Tattoo Parlor, Tattoo Artist!Sirius, Florist!Remus, Get-Together Fic, Slow Burn, Light Angst, but mostly this is a shameless rom com, graphic depictions of cacti, graphic depictions of leather jackets, Alternate Universe - Modern Setting
+
+Published: 2019-03-26 Completed: 2020-07-09
+
+Chapters: 13/13 Words: 44058
+
+\vspace*{5mm}
+
+\includegraphics[width=1.5cm]{figures/ao3.png}
+\end{center}
+
+\newpage
+
+% Playlist page
+\thispagestyle{empty}
+\vspace*{2cm}
+\begin{center}
+\fontsize{8pt}{8pt}\selectfont
+
+{\bf Recommended by the author}
+\vspace*{5mm}
+
+\includegraphics[width=0.4\textwidth]{figures/playlist.png}
+
+\vspace*{4mm}
+
+Back in Black, AC/DC
+
+Paradise by the Dashboard Light, Meatloaf
+
+Kashmir, Led Zeppelin
+
+Hong Kong Garden, Siouxsie and the Banshees
+
+Do You Wanna Touch Me, Joan Jett
+
+Cherry Bomb, the Runaways
+
+Killer Queen, Queen
+
+Life on Mars?, David Bowie
+
+Paranoid, Black Sabbath
+
+True Trans Soul Rebel, Against Me!
+
+Holiday in Cambodia, Dead Kennedys
+
+God Save the Queen, Sex Pistols
+
+Oh Bondage, Up Yours!, X Ray Spex
+
+I Wanna Be Your Dog, The Stooges
+
+Starman, David Bowie
+
+Piece of My Heart, Big Brother and the Holding Company
+
+Black Dog, Led Zeppelin
+
+\end{center}
+
+\newpage
+
+
+
+\mainmatter
+
+\pagestyle{fancy}
+\fancyhead[C]{\textit{INKED}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+
+\include{body.tex}
+
+% add more chapters as needed
+
+\backmatter
+
+\thispagestyle{empty}
+\vspace*{4cm}
+\begin{center}
+
+    \includegraphics[width=0.3\textwidth]{figures/divider.png}
+
+\end{center}
+
+\newpage
+
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+% footer for back matter
+% \fancyfoot[LE,RO]{\thepage\quad|\quad\textit{INKED}}
+
+\end{document}
+
+

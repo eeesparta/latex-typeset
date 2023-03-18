@@ -1,0 +1,19 @@
+\documentclass[a4paper]{article}
+
+\usepackage[pdftex]{color,graphicx,epsfig}
+\usepackage[final]{pdfpages}
+
+\begin{document}
+% Body signatures.
+\includepdf[pages=-200, 
+    landscape,		
+    %Page Page per packet, divisible by 4.
+    signature=20,
+]{inked-raw}
+% Last signature, can have a different value, 
+% so we dont end with empty pages.
+\includepdf[pages=201-, 
+    landscape,
+    signature=12,
+]{inked-raw}
+\end{document}
